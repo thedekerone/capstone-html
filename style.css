@@ -306,10 +306,22 @@ footer {
   color: white;
 }
 
+.footer-social__list {
+  display: flex;
+}
+
 .footer-copyright {
   margin-top: 4rem;
-  padding: 1rem 0.8rem;
+  padding: 1rem 1.2rem;
   background-color: rgb(49, 49, 49);
   color: rgb(179, 179, 179);
   justify-content: space-between;
+}
+
+.footer-list__item {
+  margin-right: 1.1rem;
+}
+
+.footer-list__item > a {
+  color: rgb(145, 145, 145);
 }
