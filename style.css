@@ -238,7 +238,7 @@ footer {
   padding: 0.8rem 1.2rem;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid rgb(214, 214, 214);
+  border: 1px solid rgb(107, 107, 107);
   border-left: 0;
   border-right: 0;
 }
@@ -251,7 +251,7 @@ footer {
   content: "";
   position: absolute;
   width: 80px;
-  border: 1px solid rgb(214, 214, 214);
+  border: 1px solid rgb(107, 107, 107);
   left: calc(100% - 40px);
   background-image: url("img/paw-solid.svg");
   background-position: center center;
@@ -265,12 +265,13 @@ footer {
 
 .footer-list__item > a {
   color: white;
+  text-transform: uppercase;
+  font-weight: bold;
   font-size: 0.8;
 }
 
 .footer-actions {
   color: white;
-  align-items: center;
   margin-top: 5rem;
   justify-content: space-between;
 }
@@ -280,14 +281,29 @@ footer {
   text-align: center;
 }
 
-.subscribe__form {
-  display: flex;
-}
-
 .actions__title {
   text-transform: uppercase;
   font-size: 1.2rem;
   margin-bottom: 1.8rem;
+  letter-spacing: 0.2em;
+}
+
+.subscribe__form {
+  display: flex;
+}
+
+.subscribe__input {
+  padding: 0.4rem 0.1rem;
+  border: 1px solid rgb(114, 114, 114);
+  background: transparent;
+  border-right: 0;
+}
+
+.subscribe__button {
+  padding: 0 1.2rem;
+  border: 0;
+  background-color: rgb(53, 53, 53);
+  color: white;
 }
 
 .footer-copyright {
