@@ -167,14 +167,27 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid black;
-  padding: 0 4rem;
+  padding: 9rem 4rem;
+  color: white;
   line-height: 1.8;
-  background-color: tomato;
+  background-color: #f46036;
+}
+
+.feature:nth-child(2) {
+  background-color: #2a2b2a;
+}
+
+.feature:nth-child(3) {
+  background-color: #1b998b;
 }
 
 .feature-info__title {
   font-size: 1.5rem;
+}
+
+.feature-info {
+  max-width: 40rem;
+  width: 100%;
 }
 
 .feature-info__button {
@@ -184,7 +197,23 @@ header {
   font-weight: bold;
   padding: 0.4rem 0.7rem;
   border-radius: 2px;
-  color: tomato;
+  color: #f46036;
+}
+
+.feature-info__button:nth-child(2) {
+  color: #2a2b2a;
+}
+
+.feature-img {
+  border-radius: 100%;
+  flex-shrink: 0;
+  width: 15rem;
+  overflow: hidden;
+  height: 15rem;
+}
+
+.feature-img img {
+  object-fit: cover;
 }
 
 footer {
