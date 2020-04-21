@@ -92,40 +92,6 @@
   font-size: 1.5rem;
 }
 
-.signup__title {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.signup__label {
-  display: block;
-  margin-bottom: 1rem;
-}
-
-.signup__input {
-  width: 100%;
-  padding: 0.4rem;
-}
-
-.signup__buttons {
-  display: flex;
-}
-
-.signup__buttons > button {
-  border: 0;
-  padding: 0.4rem 1rem;
-  font-weight: bold;
-}
-
-.signup__btn {
-  background-color: #ff6a14;
-  color: white;
-}
-
-.signup__btn--sec {
-  background-color: white;
-}
-
 @media screen and (max-width: 1024px) {
   .filter__form > * {
     margin-left: 0;
