@@ -87,6 +87,8 @@
 }
 
 .info-grid__item {
+  transition: 0.8s;
+  opacity: 0;
   text-align: center;
 }
 
