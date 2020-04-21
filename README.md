@@ -1,6 +1,7 @@
 # The Next Web responsive clone
 
-> this is a responsive clone of the The Next Web landing. 
+> this is a responsive pet shelter finder website.
+
 
 ![screenshot](img/screenshot.png)
 
@@ -9,13 +10,15 @@ This website contains:
 - A Navbar made with flex.
 - A main section made with grid.
 - A footer made with flex.
-- A latest deals, latest news and features section made with grid.
-- we used fontawesome for the icons
+- We used fontawesome for the icons
+- A three pages
+- A animations with intersection observer.
 
 ## Built With
 
 - HTML5
 - CSS3
+- Javascript
 
 ## Authors
 
@@ -25,18 +28,10 @@ This website contains:
 - Twitter: [@twitterhandle](https://twitter.com/mauricio_fow)
 - Linkedin: [linkedin](https://www.linkedin.com/in/mauricio-fow-aranibar-b2173514b/)
 
-👤 **Muhammad Fahad Umer**
-
-- Github: [@MFahadUmer](https://github.com/MFahadUmer)
-- Twitter: [@engfahadumer](https://twitter.com/engfahadumer)
-- Linkedin: [linkedin](https://www.linkedin.com/in/engineer-muhammad-fahad-e-umer-08813055/)
-
 ## Getting started
 
 - Clone the repository with:
-  `git clone git@github.com:thedekerone/tnw-clone.git`
-
-- See the original page here: https://thenextweb.com/
+  `git clone git@github.com:thedekerone/capstone-html.git`
 
 - Check the index.html to edit the structure of the page.
 
