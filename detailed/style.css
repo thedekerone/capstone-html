@@ -25,6 +25,7 @@
 
 .infocard__item {
   border: 1px solid grey;
+  font-weight: bold;
 }
 
 .infocard__item > span {
@@ -91,34 +92,7 @@
 }
 
 @media screen and (max-width: 1024px) {
-  html {
-    font-size: 14px;
-  }
-
-  .filter__form > * {
-    margin-left: 0;
-  }
-
-  .filter__form {
-    flex-direction: column;
-  }
-
-  .filter__input,
-  .filter__select {
-    max-width: none;
-  }
-
-  .filter__btn {
-    padding: 0.8rem;
-  }
-
-  .info-grid {
-    gap: 4rem;
+  .infocard__grid {
     grid-template: repeat(4, 1fr) / 1fr;
-  }
-
-  .info-item__text {
-    max-width: none;
-    padding: 0 1.3rem;
   }
 }
