@@ -2,6 +2,10 @@
   display: flex;
 }
 
+iframe {
+  height: 35rem;
+}
+
 b {
   display: block;
   font-size: 1.2rem;
