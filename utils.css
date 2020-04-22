@@ -1,9 +1,12 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:300,400,600,700&display=swap");
+
 .flex {
   display: flex;
 }
 
 iframe {
   height: 35rem;
+  border: 0;
 }
 
 b {
@@ -40,8 +43,6 @@ b {
 }
 
 /* Navbar */
-
-@import url("https://fonts.googleapis.com/css?family=Nunito:300,400,600,700&display=swap");
 
 * {
   margin: 0;
@@ -97,6 +98,7 @@ header {
 
 footer {
   padding: 2rem 0 0;
+  line-height: 1.5;
   background-color: rgb(27, 27, 27);
 }
 
@@ -164,7 +166,7 @@ footer {
 .actions__title {
   text-transform: uppercase;
   font-size: 1.2rem;
-  margin-bottom: 1.8rem;
+  margin-bottom: 1rem;
   letter-spacing: 0.2em;
 }
 
