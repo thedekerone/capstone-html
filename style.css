@@ -27,7 +27,8 @@
   padding: 3rem 2rem;
 }
 
-.search {
+.search,
+.feature-info__button {
   border-radius: 4px;
   overflow: hidden;
 }
@@ -146,7 +147,6 @@
   margin-top: 1.6rem;
   font-weight: bold;
   padding: 0.4rem 0.7rem;
-  border-radius: 2px;
   color: #2a2b2a;
 }
 

@@ -9,11 +9,6 @@ iframe {
   border: 0;
 }
 
-b {
-  display: block;
-  font-size: 1.2rem;
-}
-
 .align-center {
   align-items: center;
 }
@@ -206,6 +201,10 @@ footer {
 @media screen and (max-width: 768px) {
   html {
     font-size: 13px;
+  }
+
+  .footer-social {
+    margin-bottom: 1rem;
   }
 
   .nav {
