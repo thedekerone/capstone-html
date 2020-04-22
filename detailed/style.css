@@ -23,6 +23,12 @@
   grid-template: auto / 1fr 1fr;
 }
 
+.infocard__item,
+.infocard__button,
+.description__button {
+  border-radius: 4px;
+}
+
 .infocard__item {
   border: 1px solid grey;
   font-weight: bold;
@@ -44,14 +50,8 @@
   max-width: 4rem;
 }
 
-.infocard-list {
-  display: flex;
-  justify-content: flex-end;
-}
-
 .infocard-list__item {
   margin-left: 1.4rem;
-  display: flex;
 }
 
 .infocard-list__item > i {

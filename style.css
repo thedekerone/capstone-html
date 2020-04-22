@@ -29,7 +29,6 @@
 
 .search {
   border-radius: 4px;
-  display: flex;
   overflow: hidden;
 }
 
@@ -118,9 +117,6 @@
 
 .feature {
   height: 300px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 4rem 4rem;
   color: white;
   line-height: 1.8;
@@ -228,20 +224,6 @@
   .feature {
     align-items: center;
     flex-direction: column;
-  }
-
-  .footer-actions__item {
-    width: 100%;
-    margin-bottom: 4rem;
-    text-align: center;
-  }
-
-  .footer-copyright {
-    text-align: center;
-  }
-
-  .subscribe__form {
-    justify-content: center;
   }
 
   .search__button {
