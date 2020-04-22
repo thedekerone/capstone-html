@@ -1,42 +1,13 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-header {
-  background-color: #d35649;
-}
-
-.nav-container {
-  max-width: 1300px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 1rem 2rem;
-}
-
-.logo__img {
-  width: 150px;
-}
-
-.nav-item {
-  display: inline-block;
-  margin-left: 1rem;
-  color: white;
-}
-
-.nav-item__icon {
-  margin-right: 0.5rem;
-}
-
 .hero-container {
-  background-color: rgb(78, 78, 78);
-  height: 70vh;
   min-height: 300px;
+  background-image: url("https://ewscripps.brightspotcdn.com/dims4/default/ba90fcb/2147483647/strip/true/crop/5444x3062+3+381/resize/1280x720!/quality/90/?url=https%3A%2F%2Fewscripps.brightspotcdn.com%2F3e%2F55%2F3aab27c94adb9a3d0ff797e3fdc0%2Fanimal-animal-lover-animal-photography-1904105.jpg");
+  background-size: cover;
+  background-position: bottom left;
+  padding-bottom: 4rem;
 }
 
 .hero {
-  padding-top: 7rem;
+  padding: 9rem 2.5rem 2rem;
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
@@ -44,9 +15,11 @@ header {
 
 .hero__title {
   text-transform: uppercase;
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
   text-align: center;
   color: white;
+  font-size: 1.8rem;
+  text-shadow: rgba(0, 0, 0, 0.171) 2px 2px;
 }
 
 .hero__search {
@@ -54,15 +27,17 @@ header {
   padding: 3rem 2rem;
 }
 
-.search {
+.search,
+.feature-info__button {
   border-radius: 4px;
-  display: flex;
   overflow: hidden;
 }
 
 .search__title {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
 }
 
 .search__input {
@@ -77,14 +52,17 @@ header {
 }
 
 .search__button {
-  padding: 0 1.2rem;
-  background-color: #d35649;
+  padding: 0.7rem 1.2rem;
+  background-color: #cc444b;
+  color: white;
 }
 
 .hero__button {
   display: block;
   margin: 0 auto;
+  background-color: #fdfffc;
   padding: 0.5rem 1.2rem;
+  font-weight: bold;
   margin-top: 2rem;
 }
 
@@ -95,31 +73,43 @@ header {
 
 .info__title {
   text-align: center;
+  text-transform: uppercase;
   margin-bottom: 3rem;
+  margin-top: 5rem;
+  color: #cc444b;
 }
 
 .info-grid {
   display: grid;
-  gap: 2rem 15rem;
+  gap: 2rem 4rem;
+  margin-top: 5rem;
   grid-template: 300px 300px / 1fr 1fr;
 }
 
 .info-grid__item {
-  border: 1px solid black;
+  transition: 0.8s;
+  opacity: 0;
   text-align: center;
 }
 
 .info-item__icon,
 .info-item__title {
-  margin-top: 1.4rem;
+  margin-top: 1.3rem;
+}
+
+.info-item__icon {
+  font-size: 3rem;
 }
 
 .info-item__title {
   font-size: 1.2rem;
+  text-transform: uppercase;
 }
 
 .info-item__text {
+  margin: 0 auto;
   margin-top: 1.2rem;
+  max-width: 20rem;
 }
 
 .features {
@@ -128,17 +118,27 @@ header {
 
 .feature {
   height: 300px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border: 1px solid black;
-  padding: 0 2rem;
+  padding: 4rem 4rem;
+  color: white;
   line-height: 1.8;
-  background-color: tomato;
+  background-color: #f46036;
+}
+
+.feature:nth-child(2) {
+  background-color: #2a2b2a;
+}
+
+.feature:nth-child(3) {
+  background-color: #1b998b;
 }
 
 .feature-info__title {
   font-size: 1.5rem;
+}
+
+.feature-info {
+  max-width: 40rem;
+  width: 100%;
 }
 
 .feature-info__button {
@@ -147,6 +147,95 @@ header {
   margin-top: 1.6rem;
   font-weight: bold;
   padding: 0.4rem 0.7rem;
-  border-radius: 2px;
-  color: tomato;
+  color: #2a2b2a;
+}
+
+.feature:nth-child(1) .feature-info__button {
+  color: #f46036;
+}
+
+.feature-img {
+  border-radius: 100%;
+  margin-left: 1.5rem;
+  flex-shrink: 0;
+  width: 15rem;
+  overflow: hidden;
+  height: 15rem;
+}
+
+.feature-img img {
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1024px) {
+  .filter__form > * {
+    margin-left: 0;
+  }
+
+  .filter__form {
+    flex-direction: column;
+  }
+
+  .filter__input,
+  .filter__select {
+    max-width: none;
+  }
+
+  .filter__btn {
+    padding: 0.8rem;
+  }
+
+  .info-grid {
+    gap: 4rem;
+    grid-template: repeat(4, 1fr) / 1fr;
+  }
+
+  .info-item__text {
+    max-width: none;
+    padding: 0 1.3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero__title {
+    font-size: 1.4rem;
+  }
+
+  .nav-item__text {
+    display: none;
+  }
+
+  .feature {
+    padding: 4rem 1rem;
+    height: auto;
+    text-align: center;
+  }
+
+  .feature-img {
+    margin: 0;
+    margin-top: 4rem;
+  }
+
+  .feature-info__button {
+    margin: 2rem auto;
+  }
+
+  .search,
+  .feature {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .search__button {
+    margin-top: 0.8rem;
+  }
+
+  .footer-list {
+    display: none;
+    text-align: center;
+  }
+
+  .filter {
+    padding: 3rem 2rem;
+  }
 }

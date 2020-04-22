@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/87121b56c7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../utils.css" />
+    <title>Document</title>
+  </head>
+  <body id="body">
+    <header>
+      <div class="nav-container flex justify-between align-center">
+        <a href="../index.html" class="logo">
+          <h1>Torao Pets</h1>
+        </a>
+        <nav class="nav">
+          <a href="#" class="nav-item">
+            <span class="nav-item__icon"><i class="fas fa-search"></i></span>
+            <span class="nav-item__text">Shelters</span>
+          </a>
+          <a href="#" class="nav-item">
+            <span class="nav-item__icon"><i class="far fa-user"></i></span>
+            <span class="nav-item__text">About</span>
+          </a>
+          <a href="#" class="nav-item">
+            <span class="nav-item__icon"><i class="fas fa-rss"></i></span>
+            <span class="nav-item__text">Blog</span>
+          </a>
+          <a href="#" class="nav-item">
+            <span class="nav-item__icon"><i class="fas fa-bars"></i></span>
+            <span class="nav-item__text">More</span>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="filter">
+        <h1 class="filter__title">
+          Filter by country, pet, size:
+        </h1>
+        <form class="filter__form flex">
+          <label>
+            <b>Shelter Name</b>
+            <input class="filter__input" type="text" name="name" id="name" />
+          </label>
+          <label>
+            <b>Country</b>
+            <select class="filter__select" id="country" name="country">
+              <option value="peru">Peru</option>
+              <option value="mexico">Mexico</option>
+              <option value="chile">Chile</option>
+              <option value="us">US</option>
+            </select>
+          </label>
+          <label>
+            <b>State</b>
+            <select class="filter__select" id="state" name="state">
+              <option value="peru">Peru</option>
+              <option value="mexico">Mexico</option>
+              <option value="chile">Chile</option>
+              <option value="us">US</option>
+            </select>
+          </label>
+          <label>
+            <b>City</b>
+            <select class="filter__select" id="city" name="city">
+              <option value="peru">Peru</option>
+              <option value="mexico">Mexico</option>
+              <option value="chile">Chile</option>
+              <option value="us">US</option>
+            </select>
+          </label>
+          <label>
+            <b>Pet</b>
+            <select class="filter__select" id="pet" name="pet">
+              <option value="dog">Dog</option>
+              <option value="cat">Cat</option>
+              <option value="hamster">Hamster</option>
+              <option value="mouse">Mouse</option>
+            </select>
+          </label>
+          <label>
+            <b>Size</b>
+            <select class="filter__select" id="size" name="size">
+              <option value="small">Small</option>
+              <option value="medium">Medium</option>
+              <option value="big">Big</option>
+            </select>
+          </label>
+          <button class="filter__btn" type="submit">Search</button>
+          <button class="filter__btn btn--orange">clear filter</button>
+        </form>
+      </div>
+
+      <div class="results">
+        <h2 class="results__title">Search Results Found 7 Shelter(S)</h2>
+        <div class="results__grid" id="grid">
+          <a
+            href="../detailed/index.html"
+            class="results__item flex justify-center toObserve"
+            ><h5>Name: Demo shelter</h5></a
+          >
+          <a
+            href="../detailed/index.html"
+            class="results__item flex justify-center toObserve"
+            ><h5>Name: Demo shelter</h5></a
+          >
+          <a
+            href="../detailed/index.html"
+            class="results__item flex justify-center toObserve"
+            ><h5>Name: Demo shelter</h5></a
+          >
+          <a
+            href="../detailed/index.html"
+            class="results__item flex justify-center toObserve"
+            ><h5>Name: Demo shelter</h5></a
+          >
+          <a
+            href="../detailed/index.html"
+            class="results__item flex justify-center toObserve"
+            ><h5>Name: Demo shelter</h5></a
+          >
+          <a
+            href="../detailed/index.html"
+            class="results__item flex justify-center toObserve"
+            ><h5>Name: Demo shelter</h5></a
+          >
+          <a
+            href="../detailed/index.html"
+            class="results__item flex justify-center toObserve"
+            ><h5>Name: Demo shelter</h5></a
+          >
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <nav class="footer-nav">
+        <ul class="footer-list flex justify-between align-center">
+          <li class="footer-list__item"><a href="#">HOME</a></li>
+          <li class="footer-list__item"><a href="#">Search</a></li>
+          <li class="footer-list__item"><a href="#">about us</a></li>
+          <li class="footer-list__item"><a href="#">advertise</a></li>
+          <li class="location-icon"></li>
+          <li class="footer-list__item"><a href="#">facebook</a></li>
+          <li class="footer-list__item"><a href="#">twitter</a></li>
+          <li class="footer-list__item"><a href="#">block</a></li>
+          <li class="footer-list__item"><a href="#">google</a></li>
+        </ul>
+      </nav>
+      <div class="footer-actions flex justify-between">
+        <div class="footer-actions__item subscribe">
+          <h3 class="actions__title">subscribe</h3>
+          <form class="subscribe__form flex">
+            <input
+              class="subscribe__input"
+              type="email"
+              name="email"
+              id="email"
+            />
+            <button class="subscribe__button" type="submit">Send</button>
+          </form>
+        </div>
+        <div class="footer-actions__item">
+          <h3 class="actions__title">Contact</h3>
+          <div>
+            <p>conctact us <b>contact@toraopet.com</b></p>
+          </div>
+        </div>
+        <div class="footer-actions__item">
+          <h3 class="actions__title">
+            About
+          </h3>
+          <div><p>Here should be info about the website</p></div>
+        </div>
+      </div>
+
+      <div class="footer-copyright flex justify-between">
+        <div class="footer-social">
+          <ul class="footer-social__list flex">
+            <li class="footer-social__item">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li class="footer-social__item">
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li class="footer-social__item">
+              <a href="#"> <i class="fab fa-wordpress-simple"></i></a>
+            </li>
+            <li class="footer-social__item">
+              <a href="#"><i class="fab fa-google-plus-g"></i></a>
+            </li>
+            <li class="footer-social__item">
+              <a href="#"> <i class="fab fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div>©copyright Torao Pets powered by <b>corazon</b></div>
+      </div>
+    </footer>
+
+    <script src="../index.js"></script>
+  </body>
+</html>

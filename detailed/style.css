@@ -1,0 +1,99 @@
+/* detailed */
+
+.infocard {
+  margin: 2rem auto;
+  max-width: 1300px;
+  width: 100%;
+  padding: 2rem 1.4rem;
+  -webkit-box-shadow: 2px 1px 12px -3px rgba(0, 0, 0, 0.17);
+  -moz-box-shadow: 2px 1px 12px -3px rgba(0, 0, 0, 0.17);
+  box-shadow: 2px 1px 12px -3px rgba(0, 0, 0, 0.17);
+}
+
+.infocard__title {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.infocard__grid {
+  display: grid;
+  text-align: center;
+  gap: 1rem;
+  grid-template: auto / 1fr 1fr;
+}
+
+.infocard__item,
+.infocard__button,
+.description__button {
+  border-radius: 4px;
+}
+
+.infocard__item {
+  border: 1px solid grey;
+  font-weight: bold;
+}
+
+.infocard__item > span {
+  color: #3230c4;
+  font-weight: bold;
+}
+
+.infocard__button {
+  margin: 1rem 0;
+  margin-left: auto;
+  background-color: #f46036;
+  padding: 0.2rem 0.7rem;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  max-width: 4rem;
+}
+
+.infocard-list__item {
+  margin-left: 1.4rem;
+}
+
+.infocard-list__item > i {
+  margin-right: 0.4rem;
+}
+
+.description {
+  max-width: 1300px;
+  width: 100%;
+  margin: 1rem auto;
+  line-height: 1.5;
+  padding: 0.4rem 1rem;
+}
+
+.description__button {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  background: rgb(212, 212, 212);
+  border: 0;
+  margin-top: 1rem;
+  text-align: left;
+  width: 100%;
+  padding: 0.7rem 1.5rem;
+  letter-spacing: 0.3em;
+}
+
+.map {
+  max-width: 1300px;
+  padding: 0.4rem 1rem;
+  margin: 1rem auto;
+  width: 100%;
+}
+
+.map__title {
+  font-size: 1.6rem;
+  text-align: center;
+  color: #cc444b;
+  margin: 2rem 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .infocard__grid {
+    grid-template: repeat(4, 1fr) / 1fr;
+  }
+}
