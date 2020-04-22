@@ -49,4 +49,4 @@ Give a ⭐️ if you like this project!
 
 ## Live preview
 
-You can check how the website looks in: [Live preview](https://rawcdn.githack.com/thedekerone/capstone-html/e63b6df3bf82829da91df393b5b2af29c58f15b0/index.html)
+You can check how the website looks in: [Live preview](https://rawcdn.githack.com/thedekerone/capstone-html/97e136b60ab3937f3373022b6c2a99434d39a4ea/index.html)
